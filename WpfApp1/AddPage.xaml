@@ -1,0 +1,27 @@
+﻿<Page x:Class="WpfApp1.AddPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:WpfApp1"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      IsVisibleChanged="Page_IsVisibleChanged"
+      Title="AddPage" Background="White">
+    <Grid>
+        <StackPanel Name="stackPanel" Height="400" Width="300">
+            <Label HorizontalAlignment="Center">Photo</Label>
+            <!-- <Image Name="AddImage" Height="100" Width="100" Source="{Binding Image}" MouseDown="Image_MouseDown" /> -->
+            <Label HorizontalAlignment="Center">Username</Label>
+            <TextBox Name="Username" Width="200"></TextBox>
+            <Label HorizontalAlignment="Center">Surname</Label>
+            <TextBox Name="Surname" Width="200" ></TextBox>
+            <Label HorizontalAlignment="Center">Role</Label>
+            <ComboBox Name="RoleS" Width="200" />
+            <Label HorizontalAlignment="Center">Telephone</Label>
+            <TextBox Name="Telephone" Width="200"></TextBox>
+
+            <Button Width="100" Margin="20" Click="Button_Click">Add</Button>
+        </StackPanel>
+    </Grid>
+</Page>
